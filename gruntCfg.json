@@ -1,0 +1,24 @@
+{
+	"requirejs": {
+		"main": {
+			"option": {
+				"baseUrl": "",
+				"shim": {
+					"$": "src/zepto",
+					"_": "src/underscore",
+					"B": "src/backbone",
+					"Test": "src/Test"
+				},
+				"web": {
+					"include":[
+						"$",
+						"_",
+						"B",
+						"Test"
+					],
+					"out": "dest/libs.js"
+				}
+			}
+		}
+	}
+}
